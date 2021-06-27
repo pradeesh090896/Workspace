@@ -1,0 +1,229 @@
+:root{
+    --primary-color: hsl(256, 26%, 20%);
+    --secondary-color: hsl(216, 30%, 68%);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+    width: 100vw;
+    height: 100%;
+}
+
+.container{
+    width: 80vw;
+    margin: auto;
+    /* background: black; */
+}
+
+.navbar{
+    z-index: 100;
+    padding: 10px;
+    background: white;
+}
+
+.navbar .container {
+    /* width: 100%;
+    height: 10vh; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .container .logo{
+    width: 150px;
+    height: 50px;
+    padding: 16px;
+    /* background: url('./images/logo.svg') no-repeat center center/cover ; */
+}
+
+.navbar .container .navbar-links ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .container .navbar-links ul li{
+    list-style: none;
+}
+
+.navbar .container .navbar-links ul li a{
+    text-decoration: none;
+    color: hsl(273, 4%, 51%);
+    font-size: 14px;
+    padding: 10px 12px;
+    margin: 10px 12px;
+    text-transform: uppercase;
+}
+
+.navbar .container .navbar-links ul li a:hover,
+.navbar .container .navbar-links ul li a:active{
+    color: hsl(270, 9%, 17%);
+    border-bottom: 2px solid  hsl(256, 26%, 20%);
+}
+
+.navbar .container .navbar-links ul li button{
+    padding: 8px 10px;
+    color: white;
+    font-family: 'Karla', sans-serif;
+    text-transform: uppercase;
+    background: hsl(256, 26%, 20%);
+    box-shadow: 0px;
+    cursor: pointer;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background: var(--primary-color);
+    z-index: -10;
+    /* background: chartreuse; */
+}
+
+.hero .background-vectors{
+    z-index: -100;
+}
+.hero .background-left{
+    position: absolute;
+    bottom: -350px;
+}
+
+.hero .background-right{
+    z-index: 0;
+    position: absolute;
+    right: 0px;
+    top: -150px;
+}
+
+.hero .container {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* .hero .container{
+    width: 100%;
+    height: 100%;
+    background: violet;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+} */
+
+.hero .container .headers{
+    /* position: relative;
+    top: 50px; */
+    margin-left:50px;
+    width: 50%;
+    height: 100%;
+    /* background: chocolate; */
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    color: white;
+    /* margin-top: 150px ; */
+    /* margin: auto; */
+    /* /* background: yellow; */
+}
+
+.hero .container .headers h2{
+    font-family: 'DM Serif Display', serif;
+    font-size: 68px;
+    font-weight: 500;
+    padding: 12px;
+    /* border-top: 1px solid navajowhite; */
+    /* width: 100px; */
+}
+
+.hero .container .headers p{
+    font-size: 18px;
+    padding: 12px;
+}
+
+.hero .container .hero-image{
+    position: relative;
+    top: 100px;
+    left: 100px;
+    width: 400px;
+    height: 500px;
+    background: url('./images/image-intro-desktop.jpg') no-repeat center center/cover ; 
+    z-index: -150;
+}
+
+.services{
+    margin-top: 250px;
+    padding: 12px;
+}
+
+.services .container h4{
+    font-family: 'DM Serif Display', serif;
+    font-size: 48px;
+    font-weight: 700;
+    padding: 12px;
+    /* border-top: 1px solid navajowhite; */
+    /* width: 100px; */
+}
+
+.services .container .service-options{
+    display: flex;
+    flex-direction: row;
+}
+
+.services .container .service-options .service{
+    margin-top: 48px;
+    padding: 24px;
+}
+
+.services .container .service-options .service .service-content{
+    margin-top: 16px;
+}
+
+.services .container .service-options .service .service-content h6{
+    font-size: 24px;
+    font-family: 'DM Serif Display', serif;
+    margin-bottom: 12px;
+}
+
+.services .container .service-options .service .service-content p{
+    color: hsl(273, 4%, 51%);
+}
+
+/* .services .container .service-options .service .service-icon{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: hsl(216, 30%, 68%);
+    padding: 12px;
+}
+
+.services .container .service-options .service .service-icon #option1{
+    width: 24px;
+    height: 24px;
+    background: url('./images/icon-snappy-process.svg') no-repeat center center/cover ; ;
+} */
+
+.how-we-work .container .inner-container{
+    width: 500px;
+    height: 100px;
+    background: var(--primary-color);
+}
+
+.main-buttons{
+    width: 150px;
+    display: block;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+    margin-left: 12px;
+    margin-top: 12px;
+}
